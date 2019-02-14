@@ -2,7 +2,7 @@ import { createFetchAction, createReducer } from '../../../utils/reduxUtil'
 import * as API from '../../../utils/api'
 
 /**-----------state--------------- */
-export default defaultState = {
+export const defaultState = {
   data: [],
   paging: {
     pageSize: 10,

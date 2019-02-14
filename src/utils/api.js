@@ -1,5 +1,5 @@
-import ajax from './ajax'
+import * as ajax from './ajax'
 
 /**-------------main article---------------- */
 export const fetchArticleList = ajax.fetchJSONByGet('/main/article/view/list')
-export const fetchArticleList = ajax.fetchJSONByGet('/main/article/view/detail')
+export const fetchArticleDetail = ajax.fetchJSONByGet('/main/article/view/detail')
