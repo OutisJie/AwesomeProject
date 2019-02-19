@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-import { Provider } from 'react-redux'
-import Home from './src/pages/main/home'
-import createStore from './src/createStore'
+import React, { Component } from "react";
+import { Provider } from "react-redux";
+import Main from "./src/main";
+import createStore from "./src/createStore";
 
-const store = createStore()
+const store = createStore();
 
 export default class App extends Component<{}> {
   render() {
     return (
       <Provider store={store}>
-        <Home></Home>
+        <Main />
       </Provider>
     );
   }

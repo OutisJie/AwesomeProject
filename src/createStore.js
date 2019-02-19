@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, combineReducers } from 'redux'
 import createLogger from 'redux-logger'
 import thunk from 'redux-thunk'
 
-import articleListState from './pages/main/redux'
+import articleListState from './pages/home/redux'
 
 const middleware = applyMiddleware(
   thunk,
